@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --font-family: 'Rubik';
+    --color-noirClaire: #3A3A3A;
+    --color-noirFoncé: #000000;
+    --color-grisClaire: #8C8C8C;
+    --color-blanc: #FFFFFF;
+
+    --border-color-rose: #BC5C70;
+    --border-color-orange: #C2AC7F;
+
+    --h1-size: 48px;
+    --h2-size: 22px;
+    --p-size: 16px;
+
+    --background-color-Rose: #F5C2CD;
+    --background-color-Vert: #4F8C69;
+    --background-color-orange: #F5E2BC;
+
+    --weight300: 300;
+    --weight400: 400;
+    --weight500: 500;
+    --weight600: 600;
+    --weight700: 700;
+}
+
+body {
+    font-size: var(--font-family);
+}
+
+.card {
+    padding: 10px;
+}
+
+.title {
+    font-size: var(--h1-size);
+    font-weight: var(--weight300);
+}
+
+.warning {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: var(--background-color-Rose);
+    border-right: 5px solid var(--border-color-rose);
+    font-size: var(--p-size);
+    color: var(--color-noirClaire);
+}
+.warning p {
+    font-weight: var(--weight400);
+}
+.warning p span {
+    font-weight: var(--weight600);
+}
+
+.p-regular {
+    font-size: var(--p-size);
+}
+
+.boutton-sch {
+    font-size: var(--h2-size);
+    color: var(--color-blanc);
+    font-weight: var(--weight700);
+}
+
+/* warning orangeeeeeeeeeeee*/
+
+.warning-orange {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: var(--background-color-Rose);
+    border-right: 5px solid var(--border-color-rose);
+    font-size: var(--p-size);
+    color: var(--color-noirClaire);
+}
