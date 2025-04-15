@@ -26,52 +26,74 @@
 }
 
 body {
+    color: var(--color-blanc);
+    height: 100vh;
     font-size: var(--font-family);
+    font-family: var(--font-family);
+    background-image: 
+    url('./asset/background-cloud.svg'),       /* couche 1 en haut */
+    url('./asset/background-dirt.png'),     /* couche 2 juste en dessous */
+    url('./asset/background-stone.png');    /* couche 3 tout en bas */
+  background-repeat: repeat-x, repeat-x, repeat;
+  background-position: top 70px left 0px,top 185px left 0,top 0px left 0;
 }
-
-.card {
-    padding: 10px;
-}
-
 .title {
     font-size: var(--h1-size);
     font-weight: var(--weight300);
-}
-
-.warning {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    background-color: var(--background-color-Rose);
-    border-right: 5px solid var(--border-color-rose);
-    font-size: var(--p-size);
-    color: var(--color-noirClaire);
-}
-.warning p {
-    font-weight: var(--weight400);
-}
-.warning p span {
-    font-weight: var(--weight600);
-}
-
+}   
 .p-regular {
     font-size: var(--p-size);
 }
-
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+li{
+    display: flex;
+    gap: 5px;
+}
 .boutton-sch {
     font-size: var(--h2-size);
     color: var(--color-blanc);
     font-weight: var(--weight700);
 }
-
-/* warning orangeeeeeeeeeeee*/
-
-.warning-orange {
+header{
+    height: 70px;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr; 
+}
+.nav-orga{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo-orga{
+    display: flex;
     gap: 10px;
-    background-color: var(--background-color-Rose);
-    border-right: 5px solid var(--border-color-rose);
-    font-size: var(--p-size);
-    color: var(--color-noirClaire);
+    align-items: center;
+}
+.searchInput{
+    border: none;
+    background-color: white !important;
+    background:center left 10px url(./asset/search.svg) no-repeat ;
+    background-size: 28px ;
+    padding-left: 60px !important;
+    padding: 25px;
+    width: 310px;
+    height: 15px;
+    border-radius: 50px;
+}
+input:focus{
+    outline: none;
+}
+.input-orga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
