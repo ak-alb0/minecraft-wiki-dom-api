@@ -55,7 +55,14 @@ li {
 	display: flex;
 	gap: 5px;
 	font-weight: var(--weight600);
+<<<<<<< Updated upstream
     cursor: pointer;
+=======
+}
+#explore {
+	border-bottom: solid white 2px;
+	cursor: pointer;
+>>>>>>> Stashed changes
 }
 li a {
     text-decoration: none;
@@ -149,16 +156,16 @@ main {
 	grid-template-columns: 2fr 1fr;
 	justify-items: end;
 }
-.definition p{
-    max-width: 75%;
+.def-text {
+	max-width: 75%;
 }
-.definition img{
-    width: 90%;
+.definition img {
+	width: 90%;
 }
-.no-result-text{
-    color: var(--color-grisClaire);
-    font-weight: var(--weight700);
-    font-size: var(--h2-size);
+.no-result-text {
+	color: var(--color-grisClaire);
+	font-weight: var(--weight700);
+	font-size: var(--h2-size);
 	grid-template-columns: 2fr 2fr;
 	justify-items: end;
 }
@@ -210,6 +217,9 @@ main {
 	padding: 10px;
 	border: 1px solid var(--background-color-Vert);
 }
+.entity-hihihiha img {
+	max-width: 50%;
+}
 .entity-titre {
 	text-align: center;
 	background-color: var(--background-color-Vert);
@@ -242,19 +252,19 @@ main {
 	padding: 5px 0;
 	color: var(--color-blanc);
 }
-.entity-list-d{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
+.entity-list-d {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
 }
-.no-result{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
+.no-result {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 8px;
 }
 @media screen and (max-width: 750px) {
 	.entity-2 {
@@ -264,6 +274,7 @@ main {
 	}
 }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 750px) {
 	.entity-2 {
 		display: grid;
@@ -271,6 +282,8 @@ main {
 		grid-gap: 15px;
 	}
 }
+=======
+>>>>>>> Stashed changes
 
 @media screen and (max-width: 450px) {
 	.entity-2 {
@@ -278,10 +291,10 @@ main {
 		grid-template-columns: 1fr;
 		grid-gap: 15px;
 	}
-    form section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+	form section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 form {
@@ -296,11 +309,11 @@ form section {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .search-container {
-    padding: 10px 0;
+	padding: 10px 0;
 }
 .search-container input {
 	width: 100%;
-    border-radius: 8px;
+	border-radius: 8px;
 }
 
 .search-input {
@@ -315,3 +328,43 @@ form section {
 .search-input::placeholder {
 	color: #9ca3af;
 }
+
+/* nouveau code */
+
+#stub {
+	background-color: var(--background-color-orange);
+	border-color: #c2ac7f;
+}
+.entity-hihihiha{
+	width: 300px;
+}
+.entity-titre{
+	width: 100%;
+}
+.physic{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.entity-description{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding-bottom: 10px;
+}
+.entity-description img{
+	width: 40px;
+	height: 30px;
+}
+.entity-description div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: solid 2px darkgreen;
+}
+.entity-description p {
+	display: flex;
+	gap: 10px;
+}
+/* width: 1156px; */
