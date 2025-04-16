@@ -55,12 +55,13 @@ li {
 	display: flex;
 	gap: 5px;
 	font-weight: var(--weight600);
-}
-#explore {
-	border-bottom: solid white 2px;
     cursor: pointer;
 }
-
+li a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-blanc);
+}
 .boutton-sch {
 	font-size: var(--h2-size);
 	color: var(--color-blanc);
@@ -193,6 +194,7 @@ main {
 	}
 }
 
+/********* animallllllllllllllllllllllllllllllllllllllll ***********/
 .entity-2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -260,8 +262,6 @@ main {
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 15px;
 	}
-}
-
 }
 
 @media screen and (max-width: 750px) {
