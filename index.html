@@ -19,15 +19,15 @@
 					<ul>
 						<li>
 							<img src="./asset/compass.svg" />
-							<p>Explore</p>
+							<p id="explore">Explore</p>
 						</li>
 						<li>
 							<img src="./asset/arena.svg" />
-							<p>Arena</p>
+							<p id="arena">Arena</p>
 						</li>
 						<li>
 							<img src="./asset/rules.svg" />
-							<p>Rules</p>
+							<p id="rules">Rules</p>
 						</li>
 					</ul>
 				</div>
@@ -65,7 +65,7 @@
 							falling into the void, hit by an arrow, etc), and have some form
 							of voluntary movement.
 						</p>
-						<br>
+						<br />
 						<p>
 							Different types of entities often have unique AI and drop good or
 							bad loot depending on the entity that was killed.
@@ -96,30 +96,21 @@
 							</div>
 							<div>
 								<label></label>
-								<input type="number" placeholder="18">
+								<input type="number" placeholder="18" />
 							</div>
 							<div>
 								<label></label>
-								<input type="number" placeholder="12">
+								<input type="number" placeholder="12" />
 							</div>
 						</section>
 						<button>SEARCH</button>
 					</form>
 					<hr />
-					<section class="entity-list">
-						<p>No entity found</p>
-						<img src="./asset/emoticon-dead.svg" />
-						<section>
-							<section>
-								<p></p>
-								<img />
-								<div>
-									<a href=""></a>
-									<p></p>
-								</div>
-								<button>SEE MORE</button>
-							</section>
-						</section>
+					<section class="entity-list-d">
+						<div class="no-result">
+							<p class="no-result-text">No entity found</p>
+							<img src="./asset/emoticon-dead.svg" />
+						</div>
 					</section>
 					<section class="entity-2">
 						<section class="entity-hihihiha">
@@ -129,7 +120,7 @@
 								<a href="">Animal</a>
 								<p>Passive</p>
 							</div>
-							<hr>
+							<hr />
 							<button>SEE MORE</button>
 						</section>
 						<section class="entity-hihihiha">
@@ -139,7 +130,7 @@
 								<a href="">Animal</a>
 								<p>Passive</p>
 							</div>
-							<hr>
+							<hr />
 							<button>SEE MORE</button>
 						</section>
 						<section class="entity-hihihiha">
@@ -149,7 +140,7 @@
 								<a href="">Arthropod</a>
 								<p>Neutral</p>
 							</div>
-							<hr>
+							<hr />
 							<button>SEE MORE</button>
 						</section>
 						<section class="entity-hihihiha">
@@ -159,7 +150,7 @@
 								<a href="">Undead</a>
 								<p>Hostile</p>
 							</div>
-							<hr>
+							<hr />
 							<button>SEE MORE</button>
 						</section>
 					</section>
