@@ -55,19 +55,11 @@ li {
 	display: flex;
 	gap: 5px;
 	font-weight: var(--weight600);
-<<<<<<< Updated upstream
     cursor: pointer;
-=======
 }
 #explore {
 	border-bottom: solid white 2px;
 	cursor: pointer;
->>>>>>> Stashed changes
-}
-li a {
-    text-decoration: none;
-    list-style: none;
-    color: var(--color-blanc);
 }
 .boutton-sch {
 	font-size: var(--h2-size);
@@ -274,7 +266,6 @@ main {
 	}
 }
 
-<<<<<<< Updated upstream
 @media screen and (max-width: 750px) {
 	.entity-2 {
 		display: grid;
@@ -282,8 +273,7 @@ main {
 		grid-gap: 15px;
 	}
 }
-=======
->>>>>>> Stashed changes
+
 
 @media screen and (max-width: 450px) {
 	.entity-2 {
