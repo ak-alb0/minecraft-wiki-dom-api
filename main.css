@@ -56,6 +56,7 @@ span {
 li {
 	display: flex;
 	gap: 5px;
+    cursor: pointer;
 }
 
 .boutton-sch {
@@ -128,26 +129,26 @@ main {
 	display: flex;
 	flex-direction: column;
 	color: black;
-    padding: 30px;
-    gap: 24px;
+	padding: 30px;
+	gap: 24px;
 }
 .warning {
 	display: flex;
 	align-items: center;
-    width: 100%;
-    background-color: var(--background-color-Rose);
-    border-left: solid 5px var(--border-color-rose);
-    padding:8px 12px 8px 12px;
-    gap: 10px;
+	width: 100%;
+	background-color: var(--background-color-Rose);
+	border-left: solid 5px var(--border-color-rose);
+	padding: 8px 12px 8px 12px;
+	gap: 10px;
 }
-.warning p{
-    display: flex;
-    flex-direction: column;
+.warning p {
+	display: flex;
+	flex-direction: column;
 }
-.definition{
-   display: grid;
-   grid-template-columns: 2fr 2fr;
-   justify-items: end;
+.definition {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	justify-items: end;
 }
 
 @media screen and (min-width: 850px) {
@@ -182,71 +183,102 @@ main {
 	}
 }
 
-
-
-
-
 .entity-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
-    background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 15px;
+	background-color: white;
 }
 
 .entity-hihihiha {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid var(--background-color-Vert);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid var(--background-color-Vert);
 }
 .entity-titre {
-    text-align: center;
-    background-color: var(--background-color-Vert);
-    width: 100%;
-    padding: 5px 0;
+	text-align: center;
+	background-color: var(--background-color-Vert);
+	width: 100%;
+	padding: 5px 0;
 }
 .entity-description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
 }
 .entity-description a {
-    color: var(--color-bleu);
+	color: var(--color-bleu);
 }
 .entity-description p {
-    color: var(--color-noirClaire);
+	color: var(--color-noirClaire);
 }
 .entity-2 hr {
-    width: 100%;
-    height: 2px;
-    color: var(--background-color-Vert);
-    margin: 5px 0 7px 0;
-    border: 1px solid var(--background-color-Vert);
+	width: 100%;
+	height: 2px;
+	color: var(--background-color-Vert);
+	margin: 5px 0 7px 0;
+	border: 1px solid var(--background-color-Vert);
 }
 .entity-hihihiha button {
-    background-color: var(--background-color-Vert);
-    width: 100%;
-    border: none;
-    padding: 5px 0;
-    color: var(--color-blanc);
+	background-color: var(--background-color-Vert);
+	width: 100%;
+	border: none;
+	padding: 5px 0;
+	color: var(--color-blanc);
 }
 
+@media screen and (max-width: 750px) {
+	.entity-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
+	}
+}
 
-@media screen and (max-width : 750px){
-    .entity-2 {
+@media screen and (max-width: 450px) {
+	.entity-2 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 15px;
+	}
+    form section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 15px;
     }
 }
 
-@media screen and (max-width : 450px){
-    .entity-2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 15px;
-    }
+form {
+	display: flex;
+	flex-direction: column;
+}
+form input {
+	width: 100%;
+}
+form section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.search-container {
+    padding: 10px 0;
+}
+.search-container input {
+	width: 100%;
+    border-radius: 8px;
+}
+
+.search-input {
+	width: 100%;
+	padding: 10px 10px 10px 40px;
+	border-radius: 8px;
+	border: none;
+	background-color: white;
+	outline: none;
+}
+
+.search-input::placeholder {
+	color: #9ca3af;
 }
