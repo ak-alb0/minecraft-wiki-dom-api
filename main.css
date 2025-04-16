@@ -58,6 +58,7 @@ li {
 }
 #explore {
 	border-bottom: solid white 2px;
+    cursor: pointer;
 }
 
 .boutton-sch {
@@ -157,6 +158,8 @@ main {
     color: var(--color-grisClaire);
     font-weight: var(--weight700);
     font-size: var(--h2-size);
+	grid-template-columns: 2fr 2fr;
+	justify-items: end;
 }
 @media screen and (min-width: 850px) {
 	.theme-btn {
@@ -259,10 +262,56 @@ main {
 	}
 }
 
+}
+
+@media screen and (max-width: 750px) {
+	.entity-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
+	}
+}
+
 @media screen and (max-width: 450px) {
 	.entity-2 {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 15px;
 	}
+    form section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+form input {
+	width: 100%;
+}
+form section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.search-container {
+    padding: 10px 0;
+}
+.search-container input {
+	width: 100%;
+    border-radius: 8px;
+}
+
+.search-input {
+	width: 100%;
+	padding: 10px 10px 10px 40px;
+	border-radius: 8px;
+	border: none;
+	background-color: white;
+	outline: none;
+}
+
+.search-input::placeholder {
+	color: #9ca3af;
 }

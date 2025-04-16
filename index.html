@@ -77,22 +77,40 @@
 					<div class="entity-list-instructions">
 						<p>List of entities</p>
 						<hr />
-						<p></p>
+						<p>
+							Entities are classifie by their nature from the player's
+							perspective. You can search for one or multiples entities by their
+							name using the search bar or simply by filling appropriate filters
+							(type, health, armor, damage, etc..)
+						</p>
 					</div>
 					<form>
-						<input type="text" placeholder="Search..." aria-label="Search" />
+						<div class="search-container">
+							<input
+								class="searchInput"
+								type="text"
+								placeholder="Search..."
+								aria-label="Search"
+							/>
+						</div>
 						<section>
 							<div>
-								<label></label>
+								<label>Classification</label>
+								<select>
+									Choose
+								</select>
+							</div>
+							<div>
+								<label>Type</label>
 								<select></select>
 							</div>
 							<div>
-								<label></label>
-								<select></select>
+								<label>Health</label>
+								<input type="number" placeholder="18" />
 							</div>
 							<div>
-								<label></label>
-								<select></select>
+								<label>Armor</label>
+								<input type="number" placeholder="12" />
 							</div>
 							<div>
 								<label></label>
@@ -101,9 +119,13 @@
 							<div>
 								<label></label>
 								<input type="number" placeholder="12" />
+								<label>Damage</label>
+								<input type="number" placeholder="2" />
 							</div>
 						</section>
-						<button>SEARCH</button>
+						<div class="form-bouton">
+							<button>SEARCH</button>
+						</div>
 					</form>
 					<hr />
 					<section class="entity-list-d">
