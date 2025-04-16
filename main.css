@@ -57,9 +57,9 @@ li {
 	font-weight: var(--weight600);
     cursor: pointer;
 }
-#explore {
-	border-bottom: solid white 2px;
-	cursor: pointer;
+li a {
+    text-decoration: none;
+    color: var(--color-blanc);
 }
 .boutton-sch {
 	font-size: var(--h2-size);
