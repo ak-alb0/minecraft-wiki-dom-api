@@ -114,25 +114,6 @@ input:focus {
 	height: 38px;
 }
 
-main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.card {
-	background-color: #e6eff4;
-	width: 83%;
-	height: 1705px;
-	margin-top: 186px;
-	margin-bottom: 287px;
-	border-radius: 4px;
-	display: flex;
-	flex-direction: column;
-	color: black;
-	padding: 30px;
-	gap: 24px;
-}
-
 .rules-lettre {
     display: flex;
     flex-direction: column;

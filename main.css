@@ -120,7 +120,7 @@ main {
 .card {
 	background-color: #e6eff4;
 	width: 83%;
-	height: 1705px;
+	padding: 15px;
 	margin-top: 186px;
 	margin-bottom: 287px;
 	border-radius: 4px;
@@ -177,9 +177,6 @@ main {
 		display: grid;
 		grid-template-columns: 4fr 2fr 1fr;
 	}
-	.card {
-		height: 1038px;
-	}
 }
 @media screen and (min-width: 1440px) {
 	nav {
@@ -188,9 +185,7 @@ main {
 	.searchInput {
 		width: 310px;
 	}
-	.card {
-		height: 1108px;
-	}
+
 }
 
 /********* animallllllllllllllllllllllllllllllllllllllll ***********/
@@ -258,14 +253,6 @@ main {
 	flex-direction: column;
 	gap: 8px;
 }
-@media screen and (max-width: 750px) {
-	.entity-2 {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 15px;
-	}
-}
-
 @media screen and (max-width: 750px) {
 	.entity-2 {
 		display: grid;
