@@ -146,7 +146,7 @@ main {
 .definition {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	justify-items: end;
+	justify-items: start;
 }
 .def-text {
 	max-width: 75%;
@@ -345,3 +345,31 @@ form section {
 	gap: 10px;
 }
 /* width: 1156px; */
+
+.search-container {
+	padding: 0 17px;
+}
+.caractère div {
+	display: flex;
+	flex-direction: column;
+	padding: 0 25px;
+}
+.caractère label {
+	color: var(--color-noirClaire);
+	font-weight: var(--weight700);
+	font-size: 14px;
+}
+
+.form-bouton {
+	text-align: center;
+}
+.form-bouton button {
+	background-color: var(--background-color-Vert);
+	border: none;
+	border-radius: 99px;
+	padding: 7px 40px;
+	margin: 10px 0;
+	font-size: 22px;
+	font-weight: var(--weight700);
+	color: var(--color-blanc);
+}
