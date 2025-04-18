@@ -1,39 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-:root {
-	--font-family: "Rubik";
-	--color-noirClaire: #3a3a3a;
-	--color-noirFoncé: #000000;
-	--color-grisClaire: #8c8c8c;
-	--color-blanc: #ffffff;
-
-	--border-color-rose: #bc5c70;
-	--border-color-orange: #c2ac7f;
-
-	--h1-size: 48px;
-	--h2-size: 22px;
-	--p-size: 16px;
-
-	--background-color-Rose: #f5c2cd;
-	--background-color-Vert: #4f8c69;
-	--background-color-orange: #f5e2bc;
-
-	--weight300: 300;
-	--weight400: 400;
-	--weight500: 500;
-	--weight600: 600;
-	--weight700: 700;
-}
-
-body {
-	color: var(--color-blanc);
-	height: 100vh;
-	font-family: var(--font-family);
-	background-image: url("./asset/background-cloud.svg"),
-		url("./asset/background-dirt.png"), url("./asset/background-stone.png");
-	background-repeat: repeat-x, repeat-x, repeat;
-	background-position: top 70px left 0px, top 185px left 0, top 0px left 0;
-}
 .title {
 	font-size: var(--h1-size);
 	font-weight: var(--weight300);
@@ -55,12 +20,12 @@ li {
 	display: flex;
 	gap: 5px;
 	font-weight: var(--weight600);
-    cursor: pointer;
+	cursor: pointer;
 }
 li a {
-    text-decoration: none;
-    list-style: none;
-    color: var(--color-blanc);
+	text-decoration: none;
+	list-style: none;
+	color: var(--color-blanc);
 }
 .boutton-sch {
 	font-size: var(--h2-size);
@@ -115,10 +80,23 @@ input:focus {
 }
 
 .rules-lettre {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 .p-regular {
-    padding-right: 100px;
+	padding-right: 100px;
+}
+.tutorial-arena {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.tutorial-arena a {
+	color: #0246f1;
+	text-decoration: none;
+	border-bottom: 4px solid #0246f1;
+}
+.card {
+	margin-bottom: 0px;
 }
