@@ -37,6 +37,7 @@
 						type="text"
 						placeholder="Search..."
 						aria-label="Search"
+						id="searchInputSingle"
 					/>
 				</div>
 				<div class="orga">
@@ -91,6 +92,7 @@
 								type="text"
 								placeholder="Search..."
 								aria-label="Search"
+								id="searchInputMain"
 							/>
 						</div>
 						<section class="caractère">
@@ -120,60 +122,21 @@
 							</div>
 						</section>
 						<div class="form-bouton">
-							<button>SEARCH</button>
+							<button id="entitySearchButton" type="button">SEARCH</button>
 						</div>
 					</form>
-					<hr />
+
+					<hr/>
 					<section class="entity-list-d">
-						<div class="no-result">
+						<div class="no-result" id="noEntityDisplay">
 							<p class="no-result-text">No entity found</p>
 							<img src="./asset/emoticon-dead.svg" />
 						</div>
 					</section>
-					<section class="entity-2">
-						<section class="entity-hihihiha">
-							<p class="entity-titre">Armadillo</p>
-							<img src="./asset/Rectangle 3.svg" alt="hihihiha" />
-							<div class="entity-description">
-								<a href="">Animal</a>
-								<p>Passive</p>
-							</div>
-							<hr />
-							<button>SEE MORE</button>
-						</section>
-						<section class="entity-hihihiha">
-							<p class="entity-titre">Cow</p>
-							<img src="./asset/Rectangle 3 (1).svg" alt="hihihiha" />
-							<div class="entity-description">
-								<a href="">Animal</a>
-								<p>Passive</p>
-							</div>
-							<hr />
-							<button>SEE MORE</button>
-						</section>
-						<section class="entity-hihihiha">
-							<p class="entity-titre">Spider</p>
-							<img src="./asset/Rectangle 3 (2).svg" alt="hihihiha" />
-							<div class="entity-description">
-								<a href="">Arthropod</a>
-								<p>Neutral</p>
-							</div>
-							<hr />
-							<button>SEE MORE</button>
-						</section>
-						<section class="entity-hihihiha">
-							<p class="entity-titre">Zombie</p>
-							<img src="./asset/Rectangle 3 (3).svg" alt="hihihiha" />
-							<div class="entity-description">
-								<a href="">Undead</a>
-								<p>Hostile</p>
-							</div>
-							<hr />
-							<button>SEE MORE</button>
-						</section>
-					</section>
+					<section class="entity-2" id="cardDisplayerMain"></section>
 				</section>
 			</section>
 		</main>
+		<script src="./main.js"></script>
 	</body>
 </html>
