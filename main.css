@@ -185,7 +185,11 @@ main {
 	.searchInput {
 		width: 310px;
 	}
-
+	.entity-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
 }
 
 /********* animallllllllllllllllllllllllllllllllllllllll ***********/
@@ -193,7 +197,6 @@ main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 15px;
-	background-color: white;
 }
 
 .entity-hihihiha {
@@ -372,4 +375,19 @@ form section {
 	font-size: 22px;
 	font-weight: var(--weight700);
 	color: var(--color-blanc);
+}
+
+@media screen and (max-width : 850px) {
+	.entity-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+}
+@media screen and (max-width : 650px) {
+	.entity-2 {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	
 }
