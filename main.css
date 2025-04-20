@@ -393,3 +393,6 @@ form section {
 		grid-template-columns: 1fr;
 	}
 }
+.form-bouton button{
+	cursor: pointer;
+}
