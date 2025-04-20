@@ -1,42 +1,85 @@
 const searchInputMain = document.getElementById("searchInputMain");
 const searchInputSingle = document.getElementById("searchInputSingle");
-const entitySearchButton = document.getElementById('entitySearchButton');
+const entitySearchButton = document.getElementById("entitySearchButton");
+
+const classificationSearch = document.getElementById("classificationSearch");
+const typeSearch = document.getElementById("typeSearch");
+
+const healthSearch = document.getElementById("healthSearch");
+const armorSearch = document.getElementById("armorSearch");
+const damageSearch = document.getElementById("damageSearch");
 
 const cardDisplayerMain = document.getElementById("cardDisplayerMain");
 const noEntityDisplay = document.getElementById("noEntityDisplay");
 
-searchInputMain.addEventListener("keydown", () => {
-	
-});
-
-
-entitySearchButton.addEventListener('click', () => {
-if (searchInputMain.value === "") {
+entitySearchButton.addEventListener("click", () => {
+	if (
+		searchInputMain.value === "" &&
+		classificationSearch.value === "" &&
+		typeSearch.value === "" &&
+		healthSearch.value === "" &&
+		armorSearch.value === ""
+	) {
 		noEntityDisplay.style.display = "flex";
-	} else {
+		cardDisplayerMain.innerHTML = "";
+	} else if (healthSearch.value != "" && searchInputMain.value === "") {
 		noEntityDisplay.style.display = "none";
+		cardDisplayerMain.innerHTML = "";
 		fetch(
-			`http://192.168.1.15:3000/v1/entities?name=${searchInputMain.value}`,
+			`http://51.38.232.174:3000/v1/entities?classification=` +
+				classificationSearch.value +
+				"&" +
+				"type=" +
+				typeSearch.value +
+				"&" +
+				"health=" +
+				healthSearch.value +
+				"&" +
+				"armor=" +
+				armorSearch.value,
 			{
 				method: "GET",
 			}
 		)
 			.then((res) => res.json())
 			.then((data) => {
-				console.log((data.length = 1));
 				for (let i = 0; i < data.length; i++) {
-					mainEntityCardDisplayer(data[i].name, data[i].image, data[i].classification,  data[i].type);
+					mainEntityCardDisplayer(
+						data[i].name,
+						data[i].image,
+						data[i].classification,
+						data[i].type
+					);
 				}
 			});
-        }
+	} else {
+		noEntityDisplay.style.display = "none";
+		cardDisplayerMain.innerHTML = "";
+
+		fetch(
+			`http://51.38.232.174:3000/v1/entities?name=${searchInputMain.value}`,
+			{
+				method: "GET",
+			}
+		)
+			.then((res) => res.json())
+			.then((data) => {
+				if (data.length === 0) {
+					noEntityDisplay.style.display = "flex";
+				}
+				for (let i = 0; i < data.length; i++) {
+					mainEntityCardDisplayer(
+						data[i].name,
+						data[i].image,
+						data[i].classification,
+						data[i].type
+					);
+				}
+			});
+	}
 });
 
-
-
-
-
-
-function mainEntityCardDisplayer(name, image,classification, type) {
+function mainEntityCardDisplayer(name, image, classification, type) {
 	const section = document.createElement("section");
 	section.className = "entity-list-d";
 

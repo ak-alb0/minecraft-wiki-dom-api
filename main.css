@@ -377,7 +377,9 @@ form section {
 	font-size: 22px;
 	font-weight: var(--weight700);
 	color: var(--color-blanc);
+	cursor: pointer;
 }
+
 
 @media screen and (max-width: 850px) {
 	.entity-2 {

@@ -97,28 +97,38 @@
 						</div>
 						<section class="caractère">
 							<div>
-								<label>Classification</label>
-								<select>
-									<option value="Choose">Choose</option>
+								<label >Classification</label>
+								<select id="classificationSearch">
+									<option value="choose">Choose</option>
+									<option value="animal">Animal</option>
+									<option value="monster">Monster</option>
+									<option value="undead">Undead</option>
+									<option value="arthropod">Arthropod</option>
+									<option value="aquatic">Aquatic</option>
+									<option value="illager">Illager</option>
+									<option value="golem">Golem</option>
 								</select>
 							</div>
 							<div>
 								<label>Type</label>
-								<select>
-									<option value="Chose">Chose</option>
+								<select  id="typeSearch">
+									<option value="Choose">Choose</option>
+									<option value="passive">Passive</option>
+									<option value="hostile">Hostile</option>
+									<option value="neutral">Neutral</option>
 								</select>
 							</div>
 							<div>
 								<label>Health</label>
-								<input type="number" placeholder="18" />
+								<input id="healthSearch" type="number" placeholder="18" />
 							</div>
 							<div>
 								<label>Armor</label>
-								<input type="number" placeholder="12" />
+								<input id="armorSearch" type="number" placeholder="12" />
 							</div>
 							<div>
 								<label>Damage</label>
-								<input type="number" placeholder="2" />
+								<input id="damageSearch" type="number" placeholder="2" />
 							</div>
 						</section>
 						<div class="form-bouton">
@@ -126,7 +136,7 @@
 						</div>
 					</form>
 
-					<hr/>
+					<hr />
 					<section class="entity-list-d">
 						<div class="no-result" id="noEntityDisplay">
 							<p class="no-result-text">No entity found</p>
