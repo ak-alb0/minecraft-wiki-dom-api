@@ -40,11 +40,11 @@
 					/>
 				</div>
 				<div class="orga">
-					<button class="theme-btn"></button>
+					<button id="themeBtn" class="theme-btn"></button>
 				</div>
 			</nav>
 		</header>
-		<main>
+		<main >
 			<section class="card">
 				<h1 class="title">Explore Minecraft entities</h1>
 				<section class="warning" id="stub">
@@ -57,12 +57,12 @@
 				<section class="definition">
 					<div class="def-text">
 						<p class="p-regular">
-							<span>Armadillo</span> is a mob that spawns in warm biomes. Spider
+							<span id="mobName">Armadillo</span> is a mob that spawns in warm biomes. Spider
 							eyes, brushes, and lead can be used on the armadillo to breed,
 							brush, or lead it respectively.
 						</p>
 						<br />
-						<p>
+						<p id="mobDesc">
 							When a player is sprinting, mounting, or causes harm to an
 							armadillo, or when an undead hostile mob is nearby, it rolls up
 							into a cube-like shape to protect itself from harm.
@@ -70,50 +70,53 @@
 					</div>
 
 					<section class="entity-hihihiha">
-						<p class="entity-titre">Zombie</p>
-						<img src="./asset/mobtest.png" alt="hihihiha" />
+						<p class="entity-titre" id="entityName">Zombie</p>
+						<img id="mobSelected" src="./asset/mobtest.png" alt="hihihiha" />
 						<div class="entity-description">
 							<div>
 								<a>Health</a>
-								<p>
-									6
+								<p id="mobHealth">
+									
 									<img src="./asset/heart.png" />
 								</p>
 							</div>
 							<div>
 								<p>Armor</p>
-								<p>
+								<p id="mobArmor">
 									6
 									<img src="./asset/amor.png" />
 								</p>
 							</div>
 							<div>
 								<p>Strenght</p>
-								<p>
+								<p id="mobStrenght">
 									0
 									<img src="./asset/heart.png" />
 								</p>
 							</div>
 							<div>
 								<p>Classification</p>
-								<a>Animal</a>
+								<a id="mobClassification">Animal</a>
 							</div>
 							<div>
-								<p>Behavior</p>
-								<p>Passive</p>
+								<p >Behavior</p>
+								<p id="mobBehavior">Passive</p>
 							</div>
 						</div>
-						<button>SEE MORE</button>
+						<button>DETAILS</button>
 						<div class="physic">
 							<p>Size</p>
 							<div>
-								<p>Height: <span></span></p>
-								<p>Width: <span></span></p>
+								<p>Height: <span id="mobHeight"></span></p>
+								<p>Width: <span id="mobWidth"></span></p>
 							</div>
 						</div>
 					</section>
 				</section>
 			</section>
 		</main>
+		<script src="./main.js">
+			
+		</script>
 	</body>
 </html>
